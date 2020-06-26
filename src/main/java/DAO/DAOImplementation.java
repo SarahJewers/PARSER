@@ -8,48 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * The type Dao implementation.
+ */
 public  class DAOImplementation {
-/*
-    public <T> void save(T t){
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        session.beginTransaction();
-        session.save(t);
-        session.getTransaction().commit();
-        session.close();
-    }
-
-    public static List<ResultsEntity> getAll(){
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        session.beginTransaction();
-        List list = session.createQuery("from ResultsEntity").list();
-        session.getTransaction().commit();
-        session.close();
-        return list;
-    }
-
-    public void update(ResultsEntity resultsEntity){
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        session.beginTransaction();
-        session.update(resultsEntity);
-        session.getTransaction().commit();
-        session.close();
-    }
-
-
-    public ResultsEntity getUserById(int id){
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        session.beginTransaction();
-        Query query = session.createQuery("from ResultsEntity  where id=:id");
-        query.setInteger("id", id);
-        ResultsEntity resultsEntity = (ResultsEntity) query.uniqueResult();
-        session.getTransaction().commit();
-        session.close();
-        return resultsEntity;
-    }
-*/
 
     private final DAOHsqldb hsqldb = DAOHsqldb.getHsqldb();
 
+    /**
+     * The Connection.
+     */
     public Connection connection;
 
     /**
@@ -114,7 +82,7 @@ public  class DAOImplementation {
             while (resultSet.next()) {
                 list.add(getObject(resultSet));
             }
-            connection.close(); //TODO ХМММММММММ
+            connection.close();
         } catch (SQLException e) {
             System.err.println(e);
         }
@@ -126,31 +94,6 @@ public  class DAOImplementation {
      *
      * @param resultsEntity the results entity
      */
-    /*public void update(ResultsEntity resultsEntity){
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        session.beginTransaction();
-        session.update(resultsEntity);
-        session.getTransaction().commit();
-        session.close();
-    }
-
-
-    /**
-     * Get user by id results entity.
-     *
-     * @param id the id
-     * @return the results entity
-     */
-    /*public ResultsEntity getUserById(int id){
-        Session session = HibernateUtil.getSessionFactory().openSession();
-        session.beginTransaction();
-        Query query = session.createQuery("from ResultsEntity  where id=:id");
-        query.setInteger("id", id);
-        ResultsEntity resultsEntity = (ResultsEntity) query.uniqueResult();
-        session.getTransaction().commit();
-        session.close();
-        return resultsEntity;
-    }*/
 
     /**
      * Gets object.

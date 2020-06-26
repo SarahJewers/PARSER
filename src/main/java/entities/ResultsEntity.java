@@ -48,7 +48,7 @@ public class ResultsEntity {
     /**
      * Gets words.
      *
-     * @return words
+     * @return words words
      */
     public String getWords() {
         return words;
@@ -111,7 +111,7 @@ public class ResultsEntity {
      * Instantiates a new Results entity.
      *
      * @param id             the id
-     * @param words           the words
+     * @param words          the words
      * @param words_quantity the words quantity
      */
     public ResultsEntity(long id, String words, int words_quantity){
@@ -120,6 +120,12 @@ public class ResultsEntity {
         this.words_quantity = words_quantity;
     }
 
+    /**
+     * Instantiates a new Results entity.
+     *
+     * @param words          the words
+     * @param words_quantity the words quantity
+     */
     public ResultsEntity(String words, int words_quantity){
         this.words = words;
         this.words_quantity = words_quantity;

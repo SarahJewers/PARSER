@@ -20,8 +20,5 @@ public class Main {
         textAnalysis.setSplitWords(getHTML.getPathName());
         Map<String, Integer> occurrences = textAnalysis.wordCount();
         textAnalysis.printWords(occurrences);
-        //WebParser webParser = new WebParser();
-        //webParser.doPost();
-
     }
 }
