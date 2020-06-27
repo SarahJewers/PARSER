@@ -1,5 +1,7 @@
 package webparser;
 
+import UI.MainForm;
+
 import java.sql.SQLException;
 import java.util.Map;
 
@@ -14,11 +16,13 @@ public class Main {
      * @throws SQLException the sql exception
      */
     public static void main(String[] args) throws SQLException {
-        GetHTML getHTML = new GetHTML("https://www.simbirsoft.com/");
+        MainForm mainForm = new MainForm();
+        mainForm.setVisible(true);
+        /*GetHTML getHTML = new GetHTML("https://www.simbirsoft.com/");
         getHTML.getHtmlToText();
         TextAnalysis textAnalysis = new TextAnalysis();
         textAnalysis.setSplitWords(getHTML.getPathName());
         Map<String, Integer> occurrences = textAnalysis.wordCount();
-        textAnalysis.printWords(occurrences);
+        textAnalysis.printWords(occurrences);*/
     }
 }
