@@ -1,7 +1,9 @@
 package webparser;
 
 import org.apache.commons.io.FileUtils;
-import org.jsoup.Jsoup;
+
+
+import org.jsoup.*;
 import org.jsoup.nodes.Document;
 
 import java.io.File;

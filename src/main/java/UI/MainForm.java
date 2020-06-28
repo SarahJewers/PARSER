@@ -12,17 +12,25 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The type Main form.
+ */
 public class MainForm extends JFrame {
     private JTextArea textArea1;
     private JPanel panel1;
     private JButton button1;
     private JTextField textField1;
+    private JPanel panel2;
+    private JPanel panel3;
 
+    /**
+     * Instantiates a new Main form.
+     */
     public MainForm(){
         this.setSize(500, 600);
         setContentPane(panel1);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        //JFrame jFrame = new JFrame();
+
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
