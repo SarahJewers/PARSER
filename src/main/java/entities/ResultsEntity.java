@@ -108,7 +108,7 @@ public class ResultsEntity {
     }
 
     /**
-     * Instantiates a new Results entity.
+     * Instantiates MainForm new Results entity.
      *
      * @param id             the id
      * @param words          the words
@@ -121,7 +121,7 @@ public class ResultsEntity {
     }
 
     /**
-     * Instantiates a new Results entity.
+     * Instantiates MainForm new Results entity.
      *
      * @param words          the words
      * @param words_quantity the words quantity
@@ -132,7 +132,7 @@ public class ResultsEntity {
     }
 
     /**
-     * Instantiates a new Results entity.
+     * Instantiates MainForm new Results entity.
      */
     public ResultsEntity(){
 

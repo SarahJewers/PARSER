@@ -1,9 +1,8 @@
 package webparser;
 
-import UI.MainForm;
+import UI.NewJFrame;
 
 import java.sql.SQLException;
-import java.util.Map;
 
 /**
  * The type Main.
@@ -16,8 +15,8 @@ public class Main {
      * @throws SQLException the sql exception
      */
     public static void main(String[] args) throws SQLException {
-        MainForm mainForm = new MainForm();
-        mainForm.setVisible(true);
+        NewJFrame newJFrame = new NewJFrame();
+        newJFrame.setVisible(true);
         /*GetHTML getHTML = new GetHTML("https://www.simbirsoft.com/");
         getHTML.getHtmlToText();
         TextAnalysis textAnalysis = new TextAnalysis();

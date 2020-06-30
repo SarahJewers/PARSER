@@ -1,13 +1,13 @@
 package webparser;
 
 import org.apache.commons.io.FileUtils;
-
-
-import org.jsoup.*;
+import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
+
 
 import java.io.File;
 import java.io.IOException;
+
 
 /**
  * The type Get html.
@@ -18,7 +18,7 @@ public class GetHTML {
     private static final String PATH_NAME = "src/main/resources/htmlTemp/htmlPage";
 
     /**
-     * Instantiates a new Get html.
+     * Instantiates MainForm new Get html.
      *
      * @param url the url
      */

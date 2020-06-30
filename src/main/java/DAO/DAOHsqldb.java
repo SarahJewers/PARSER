@@ -29,7 +29,7 @@ public class DAOHsqldb {
         private static DAOHsqldb hsqldb;
 
         /**
-         * Instantiates a new HsqldbDAO.
+         * Instantiates MainForm new HsqldbDAO.
          */
         private DAOHsqldb() {
             try {
@@ -85,8 +85,9 @@ public class DAOHsqldb {
                 hsqldb = new DAOHsqldb();
                 String path = new File("").getAbsolutePath()
                         .replaceAll("[\\\\/]", "/");
-                url = "jdbc:hsqldb:file:" + path
-                        + "/src/database/database";
+                url = "jdbc:hsqldb:file:"+path+"/database/database";
+                System.out.println(path);
+                System.out.println (url);
             }
             return hsqldb;
         }
