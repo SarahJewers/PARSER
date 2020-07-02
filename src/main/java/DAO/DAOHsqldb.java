@@ -1,5 +1,10 @@
 package DAO;
+
 import java.io.File;
+
+/**
+ * The type Dao hsqldb.
+ */
 public class DAOHsqldb {
 
 
@@ -39,48 +44,48 @@ public class DAOHsqldb {
             }
         }
 
-        /**
-         * Gets url.
-         *
-         * @return the url
-         */
-        public String getURL() {
+    /**
+     * Gets url.
+     *
+     * @return the url
+     */
+    public String getURL() {
             return url;
         }
 
-        /**
-         * Gets name.
-         *
-         * @return the name
-         */
-        public String getName() {
+    /**
+     * Gets name.
+     *
+     * @return the name
+     */
+    public String getName() {
             return NAME;
         }
 
-        /**
-         * Gets user.
-         *
-         * @return the user
-         */
-        public String getUser() {
+    /**
+     * Gets user.
+     *
+     * @return the user
+     */
+    public String getUser() {
             return USER;
         }
 
-        /**
-         * Gets password.
-         *
-         * @return the password
-         */
-        public String getPassword() {
+    /**
+     * Gets password.
+     *
+     * @return the password
+     */
+    public String getPassword() {
             return PASSWORD;
         }
 
-        /**
-         * Gets hsqldb.
-         *
-         * @return the hsqldb
-         */
-        public static synchronized DAOHsqldb getHsqldb() {
+    /**
+     * Gets hsqldb.
+     *
+     * @return the hsqldb
+     */
+    public static synchronized DAOHsqldb getHsqldb() {
             if (hsqldb == null) {
                 hsqldb = new DAOHsqldb();
                 String path = new File("").getAbsolutePath()

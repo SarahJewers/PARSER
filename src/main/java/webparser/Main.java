@@ -1,7 +1,6 @@
 package webparser;
 
 import UI.NewJFrame;
-
 import java.sql.SQLException;
 
 /**
@@ -17,11 +16,5 @@ public class Main {
     public static void main(String[] args) throws SQLException {
         NewJFrame newJFrame = new NewJFrame();
         newJFrame.setVisible(true);
-        /*GetHTML getHTML = new GetHTML("https://www.simbirsoft.com/");
-        getHTML.getHtmlToText();
-        TextAnalysis textAnalysis = new TextAnalysis();
-        textAnalysis.setSplitWords(getHTML.getPathName());
-        Map<String, Integer> occurrences = textAnalysis.wordCount();
-        textAnalysis.printWords(occurrences);*/
     }
 }

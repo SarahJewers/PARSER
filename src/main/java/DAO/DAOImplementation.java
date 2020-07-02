@@ -2,7 +2,6 @@ package DAO;
 
 
 import entities.ResultsEntity;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -29,7 +28,6 @@ public  class DAOImplementation {
     public Connection getConnection() throws SQLException {
 
         connection = null;
-        // connection.close();
         try {
             connection = DriverManager.getConnection(
                     hsqldb.getURL(), hsqldb.getUser(), hsqldb.getPassword());

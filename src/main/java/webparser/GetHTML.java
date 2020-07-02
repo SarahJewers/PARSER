@@ -3,8 +3,6 @@ package webparser;
 import org.apache.commons.io.FileUtils;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-
-
 import java.io.File;
 import java.io.IOException;
 
